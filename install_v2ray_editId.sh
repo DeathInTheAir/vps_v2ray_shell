@@ -1,6 +1,8 @@
 #!/bin/bash
 
+apt install -y nload vim
+
 bash v2ray.sh
 
-sed -i 's/"id": ".*/"id": "fb26fffb-91e1-4a2d-b686-b6f41907014f"/' /etc/v2ray/config.json
+sed -i 's/"id": ".*/"id": "fb26fffb-91e1-4a2d-b686-b6f41907014f",/' /etc/v2ray/config.json
 v2ray restart
