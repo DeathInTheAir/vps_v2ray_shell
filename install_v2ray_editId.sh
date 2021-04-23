@@ -26,9 +26,9 @@ bash speedtest.sh
 
 # 修改dns解析
 username=$1
-passwd=$2
+password=$2
 git clone https://github.com/DeathInTheAir/freenom-ddns.git
 cd freenom-ddns
 sed -i "s/username/${username}" config
-sed -i "s/passwd/${passwd}" config
+sed -i "s/password/${password}" config
 bash check.sh
