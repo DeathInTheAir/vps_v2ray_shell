@@ -25,10 +25,4 @@ apt-get install speedtest
 bash speedtest.sh
 
 # 修改dns解析
-username=$1
-password=$2
-git clone https://github.com/DeathInTheAir/freenom-ddns.git
-cd freenom-ddns
-sed -i "s/username/${username}" config
-sed -i "s/password/${password}" config
-bash check.sh
+bash freenom_auto_ddns.sh $1 $2 $3 $4
