@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-uername=$1
+username=$1
 password=$2
 domname=$3
 domid=$4
